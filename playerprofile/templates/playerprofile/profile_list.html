@@ -1,0 +1,22 @@
+{% extends 'playerprofile/base.html' %}
+
+{% block content %}
+    <h1>SAMPLE</h1>
+    <div class="row"></div>
+    {%for profile in profile_list %}
+        <div class="col-sm-3">
+            <div class="card">
+                <img class="card-img-top card-img-center" src="{{ profile.pic }}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">詳細</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
