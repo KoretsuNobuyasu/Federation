@@ -12,3 +12,10 @@ class Topics(models.Model):
 
     def ___str___(self):
         return self.title
+
+
+
+
+class Photo(models.Model):
+
+    image = models.ImageField(upload_to='top_page')
