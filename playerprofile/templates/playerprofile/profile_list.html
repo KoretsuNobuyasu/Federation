@@ -1,0 +1,43 @@
+{% extends 'playerprofile/css.html' %}
+
+{% block content %}
+
+    <div class="pricing-table">
+        {% for profile in profile_list %}
+        <div class="col">
+            <div class="table">
+                <img class="thumbnail" src="{{ profile.pic }}" alt="Card image cap" width="200px" height="275px">
+                <h2>{{ profile.title }}</h2>
+                <div class="price">
+                    <span><strong>Category</strong> :{{ profile.info.category }}</span>
+                </div>
+                <ul>
+                    <li><strong>所属県連</strong>:{{ profile.info.prefecture }}</li>
+                    <li><strong>チーム名</strong>:{{ profile.team }}</li>
+                </ul>
+                <a href="{% url 'playerprofile:detail' profile.pk %}">詳細</a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    <!--
+    <h1>SAMPLE</h1>
+    <div class="row"></div>
+    %for profile in profile_list %}
+        <div class="col-sm-3">
+            <div class="card">
+                <img class="card-img-top card-img-center" src="{{ profile.pic }}" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">
+                        Some quick example text to build on the card title
+                        and make up the bulk of the card's content.
+                    </p>
+                    <a href="#!" class="btn btn-primary">詳細</a>
+                </div>
+            </div>
+        </div>
+    % endfor %}
+    </div>
+    -->
+{% endblock %}

@@ -1,10 +1,8 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
 <head>
     <meta charset="utf-8">
     <title>JRSF SPEED</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <!-- Bootstrap CSS -->
@@ -105,57 +103,134 @@
             }
         }
 
-           .global-nav {
-    position: relative;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
+        .global-nav {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            max-width: 1000px;
+            margin: 0 auto;
 
+        }
+        /* 各メニューのスタイル */
+        .global-nav p {
+            float: left;
+            width: 25%;
+            text-decoration: none;
+            color: #2c3e50;
 
+            display: block;
+            font-size: 14px;
+            transition: 0.5s linear;
+        }
+        .global-nav p a {
+            display: block;
+            color: #1c1c1c;
+        }
+        /* 黒いバーのスタイル */
+        .global-nav--bar {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            width: 25%;
+            height: 5px;
+            background: #000;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+        /* ホバーでバーの位置を変化 */
+        .global-nav p:nth-child(1):hover ~ .global-nav--bar {
+            left: 0;
+        }
+        .global-nav p:nth-child(2):hover ~ .global-nav--bar {
+            left: 25%;
+        }
+        .global-nav p:nth-child(3):hover ~ .global-nav--bar {
+            left: 50%;
+        }
+        .global-nav p:nth-child(4):hover ~ .global-nav--bar {
+            left: 75%;
+        }
+        .inline {
+            display: inline-block;
+        }
 
-/* 各メニューのスタイル */
-    .global-nav p {
-        float: left;
-        width: 25%;
-    }
-    .global-nav p a {
-        display: block;
-        color: #1c1c1c;
-    }
+        body {
+            margin:0;
+            padding: 0;
+            background: url(https://scontent.foko1-1.fna.fbcdn.net/v/t1.0-9/47342441_1454439678022073_5777040177750867968_o.jpg?_nc_cat=107&_nc_ht=scontent.foko1-1.fna&oh=dca424d81e40768cce59201fa062b4a2&oe=5D015EB4) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .pricing-table {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .col{
+            flex: 25%;
+            padding: 10px;
+            max-width: 320px;
+            box-sizing: border-box;
+        }
 
-    /* 黒いバーのスタイル */
-    .global-nav--bar {
-        position: absolute;
-        display: block;
-        bottom: 0;
-        left: 0;
-        width: 25%;
-        height: 5px;
-        background: #000;
-        -webkit-transition: all .5s;
-        transition: all .5s;
-    }
-
-    /* ホバーでバーの位置を変化 */
-    .global-nav p:nth-child(1):hover ~ .global-nav--bar {
-        left: 0;
-    }
-    .global-nav p:nth-child(2):hover ~ .global-nav--bar {
-        left: 25%;
-    }
-    .global-nav p:nth-child(3):hover ~ .global-nav--bar {
-        left: 50%;
-    }
-    .global-nav p:nth-child(4):hover ~ .global-nav--bar {
-        left: 75%;
-    }
-    .inline {
-    display: inline-block;
-}
-
+        .table{
+            background: #fff;
+            padding: 40px 20px;
+            font-family: "montserrat", sans-serif;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 10px #00000070;
+        }
+        .table h2{
+            text-transform: uppercase;
+        }
+        .table ul{
+            margin: 0;
+            padding: 0;
+        }
+        .table ul li{
+            padding: 10px 0;
+            list-style: none;
+        }
+        .price{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .price span{
+            display: block;
+            font-size: 14px;
+        }
+        .table a{
+            text-decoration: none;
+            color: #2c3e50;
+            border: 2px solid #2c3e50;
+            display: block;
+            padding: 10px 0;
+            margin: 10px 0;
+            border-radius: 40px;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.5s linear;
+        }
+        .table a:hover{
+            background: #2c3e50;
+            color: #fff;
+        }
+        @media screen and (max-width: 980px){
+            .col{
+                flex: 50%;
+            }
+        }
+        @media screen and (max-width: 700px){
+            .col{
+                flex: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -167,6 +242,7 @@
         </label>
 
         <ul class="menu">
+            <a href="{% url 'top:index' %}">TOP</a>
             <a href="#">SPEED</a>
             <a href="http://jrsf.or.jp/artistic/">ARTISTIC</a>
             <a href="http://jrsf.or.jp/rink_hockey/">RINK HOCKEY</a>
@@ -176,19 +252,13 @@
             </label>
         </ul>
     </div>
-    <div class="content">
-    <center>
-        <a href="{% url 'top:index' %}"><img src="http://jrsf.or.jp/wordpress/wp-content/themes/jrsf/image/01_top/main_image_sp.jpg" alt="JRSF"></a>
-    </center>
-    </div>
-
     <nav class="global-nav">
             <p><a href="{% url 'playerprofile:index' %}">選手紹介</a></p>
             <p><a href="#">大会情報</a></p>
             <p><a href="#">スクール・体験会</a></p>
             <p><a href="#">公式記録</a></p>
             <span class="global-nav--bar"></span>
-    </nav><br>
+    </nav><br><br><br>
     {% block content %}
     {% endblock %}
     <div class="bottom_links">
