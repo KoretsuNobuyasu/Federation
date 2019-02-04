@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>JRSF SPEED</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "montserrat", sans-serif;
+        }
+
+        .header{
+            height: 100px;
+            background: #34495e;
+            padding: 0 20px;
+            color: #fff;
+        }
+
+        .logo{
+            line-height: 100px;
+            float: left;
+            text-transform: uppercase;
+        }
+
+        .menu{
+            float: right;
+            line-height: 100px;
+        }
+
+        .menu a{
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 10px;
+            transition: 0.4s;
+        }
+
+        .show-menu-btn, .hide-menu-btn{
+            transition: 0.4s;
+            font-size: 30px;
+            cursor: pointer;
+            display: none;
+        }
+        .show-menu-btn{
+            float: right;
+        }
+        .show-menu-btn i{
+            line-height: 100px;
+        }
+        .menu a:hover,
+        .show-menu-btn:hover,
+        .hide-menu-btn:hover{
+            color: #3498db;
+        }
+        #chk{
+            position: absolute;
+            visibility: hidden;
+            z-index: -1111;
+        }
+        .content{
+            padding: 0 20px;
+        }
+        .content img{
+            width: 100%;
+            max-width: 700px;
+            margin: 20px 0;
+        }
+        .content p{
+            text-align: justify;
+        }
+        @media screen and (max-width: 800px){
+            .show-menu-btn, .hide-menu-btn{
+                display: block;
+            }
+            .menu{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #333;
+                right: -100%;
+                top: 0;
+                text-align: center;
+                padding: 80px 0;
+                line-height: normal;
+                transition: 0.7s;
+            }
+            .menu a{
+                display: block;
+                padding: 20px;
+            }
+            .hide-menu-btn{
+                position: absolute;
+                top: 40px;
+                right: 40px;
+            }
+            #chk:checked ~ .menu{
+                right: 0;
+            }
+        }
+
+        .global-nav {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            max-width: 1000px;
+            margin: 0 auto;
+
+        }
+        /* 各メニューのスタイル */
+        .global-nav p {
+            float: left;
+            width: 25%;
+            text-decoration: none;
+            color: #2c3e50;
+
+            display: block;
+            font-size: 14px;
+            transition: 0.5s linear;
+        }
+        .global-nav p a {
+            display: block;
+            color: #1c1c1c;
+        }
+        /* 黒いバーのスタイル */
+        .global-nav--bar {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            width: 25%;
+            height: 5px;
+            background: #000;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+        /* ホバーでバーの位置を変化 */
+        .global-nav p:nth-child(1):hover ~ .global-nav--bar {
+            left: 0;
+        }
+        .global-nav p:nth-child(2):hover ~ .global-nav--bar {
+            left: 25%;
+        }
+        .global-nav p:nth-child(3):hover ~ .global-nav--bar {
+            left: 50%;
+        }
+        .global-nav p:nth-child(4):hover ~ .global-nav--bar {
+            left: 75%;
+        }
+        .inline {
+            display: inline-block;
+        }
+
+        body {
+            margin:0;
+            padding: 0;
+            background: url(https://scontent.foko1-1.fna.fbcdn.net/v/t1.0-9/47342441_1454439678022073_5777040177750867968_o.jpg?_nc_cat=107&_nc_ht=scontent.foko1-1.fna&oh=dca424d81e40768cce59201fa062b4a2&oe=5D015EB4) no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .pricing-table {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .col{
+            flex: 25%;
+            padding: 10px;
+            max-width: 320px;
+            box-sizing: border-box;
+        }
+
+        .table{
+            background: #fff;
+            padding: 40px 20px;
+            font-family: "montserrat", sans-serif;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 10px #00000070;
+        }
+        .table h2{
+            text-transform: uppercase;
+        }
+        .table ul{
+            margin: 0;
+            padding: 0;
+        }
+        .table ul li{
+            padding: 10px 0;
+            list-style: none;
+        }
+        .price{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .price span{
+            display: block;
+            font-size: 14px;
+        }
+        .table a{
+            text-decoration: none;
+            color: #2c3e50;
+            border: 2px solid #2c3e50;
+            display: block;
+            padding: 10px 0;
+            margin: 10px 0;
+            border-radius: 40px;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.5s linear;
+        }
+        .table a:hover{
+            background: #2c3e50;
+            color: #fff;
+        }
+        @media screen and (max-width: 980px){
+            .col{
+                flex: 50%;
+            }
+        }
+        @media screen and (max-width: 700px){
+            .col{
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2 class="logo">JRSF SPEED</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+
+        <ul class="menu">
+            <a href="{% url 'top:index' %}">TOP</a>
+            <a href="#">SPEED</a>
+            <a href="http://jrsf.or.jp/artistic/">ARTISTIC</a>
+            <a href="http://jrsf.or.jp/rink_hockey/">RINK HOCKEY</a>
+            <a href="http://jrsf.or.jp/inline_hockey/">INLINE HOCKEY</a>
+            <label for="chk" class="hide-menu-btn">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </div>
+    <nav class="global-nav">
+            <p><a href="{% url 'playerprofile:index' %}">選手紹介</a></p>
+            <p><a href="#">大会情報</a></p>
+            <p><a href="#">スクール・体験会</a></p>
+            <p><a href="#">公式記録</a></p>
+            <span class="global-nav--bar"></span>
+    </nav><br><br><br>
+    {% block content %}
+    {% endblock %}
+    <div class="bottom_links">
+        <div class="social_links">
+            <div class="social_wrap clearfix">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.j-baa.org/" data-lang="ja" data-count="none">ツイート</a>
+                <div class="g-plusone" data-size="medium" data-annotation="none"></div>
+                <div class="fb-like" data-href="http://www.jrsf.or.jp/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="relation_link">
+                <a href="https://www.facebook.com/JrsfSpeed/" target="_blank"><img src="http://jrsf.or.jp/wordpress/wp-content/themes/jrsf/image/common/relation_link_facebook.png" alt="facebook" class="inline" /></a>
+                <a href="http://www.rollersports.org/" target="_blank"><img src="http://jrsf.or.jp/wordpress/wp-content/themes/jrsf/image/common/relation_link_firs.png" alt="FIRS" class="inline" /></a>
+            </div>
+            <div id="copyright">
+                <address id="copyYear" class="fontEn">Copyright &copy; 2017 Japan Roller Sports Federation. ALL rights reserved.</address>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="http://jrsf.or.jp/wordpress/wp-content/themes/jrsf/js/social_rewrite.js"></script>
+    <!-- twitter START -->
+    <script type="text/javascript">
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+    <!-- twitter END -->
+    <!-- google_plus START -->
+    <script type="text/javascript">
+        window.___gcfg = {lang: 'ja'};
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/platform.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+    <!-- google_plus END -->
+    <!-- facebook_like START -->
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- facebook_like END -->
+    <!-- Google_Analytics START -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-104294547-1', 'auto');
+            ga('send', 'pageview');
+    </script>
+    <!-- Google_Analytics END -->
+
+
+</body>
+
+</html>
