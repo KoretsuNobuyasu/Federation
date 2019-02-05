@@ -7,7 +7,8 @@ from django.conf.urls.static import static
 app_name = 'top'
 
 urlpatterns = [
-    path('', views.IndexViews.as_view(), name='index'),
+    path('', views.TopViews.as_view(),name='top'),
+    path('top', views.IndexViews.as_view(), name='index'),
 ]
 
 if settings.DEBUG:

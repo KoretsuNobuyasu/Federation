@@ -9,3 +9,6 @@ class IndexViews(generic.ListView):
 
     def get_queryset(self):
         return Topics.objects.order_by('-created_at')
+
+class TopViews(generic.TemplateView):
+    template_name = 'top/first.html'
