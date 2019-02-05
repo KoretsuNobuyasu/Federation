@@ -1,0 +1,20 @@
+{% extends 'gamesinformation/base.html' %}
+
+{% block content %}
+    <div class="card mb-3">
+        <h2 class="card-header bg-dark text-white">{{ gamesinformation.title }}</h2>
+        <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">{{ gamesinformation.category.name }}</h6>
+            <p class="card-text">
+                {{ gamesinformation.text | linebreaksbr | urlize}}
+            </p>
+            <a href="/media/{{ gamesinformation.guidelines}}" download="{{ gamesinformation.guidelines }}">要項ダウンロード</a><br>
+            {% if gamesinformation.is_date_limit %}
+                <strong><p>公式結果は出ておりません</p></strong>
+            {% else %}
+                <a href="/media/{{ gamesinformation.result }}" download="{{ gamesinformation.guidelines }}">結果ダウンロード</a>
+            {% endif %}
+            <p>開催日:{{ gamesinformation.created_at }}</p>
+        </div>
+    </div>
+{% endblock %}
