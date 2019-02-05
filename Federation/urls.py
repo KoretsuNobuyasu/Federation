@@ -22,4 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('top.urls')),
     path('playerprofile/',include('playerprofile.urls')),
+    path('gamesinformation/',include('gamesinformation.urls')),
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

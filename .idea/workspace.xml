@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1e128bc-24cb-4b68-9248-8a62a92712f4" name="Default" comment="" />
+    <list default="true" id="a1e128bc-24cb-4b68-9248-8a62a92712f4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Federation/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Federation/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Federation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Federation/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playerprofile/templates/playerprofile/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/playerprofile/templates/playerprofile/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playerprofile/templates/playerprofile/css.html" beforeDir="false" afterPath="$PROJECT_DIR$/playerprofile/templates/playerprofile/css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playerprofile/templates/playerprofile/profile_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/playerprofile/templates/playerprofile/profile_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top/templates/top/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/top/templates/top/base.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,6 +20,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="gamesinformation_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gamesinformation/templates/gamesinformation/gamesinformation_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gamesinformation_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gamesinformation/templates/gamesinformation/gamesinformation_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gamesinformation/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gamesinformation/templates/gamesinformation/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2992">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-145">
+              <caret line="186" column="72" lean-forward="true" selection-start-line="186" selection-start-column="72" selection-end-line="186" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/base_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="738">
+              <caret line="208" column="30" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="css.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/css.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="256" column="72" lean-forward="true" selection-start-line="256" selection-start-column="72" selection-end-line="256" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="profile_detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/profile_detail.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -20,97 +95,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base_detail.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/base_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="153" column="46" selection-start-line="153" selection-start-column="46" selection-end-line="153" selection-end-column="46" />
-              <folding>
-                <element signature="e#4684#4690#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/top/templates/top/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-end-line="255" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/css.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="164" column="9" selection-start-line="158" selection-start-column="8" selection-end-line="164" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="profile_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/profile_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+            <state relative-caret-position="315">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/playerprofile/urls.py">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/top/templates/top/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/playerprofile/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/playerprofile/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/playerprofile/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="220" column="35" selection-end-line="255" selection-end-column="7" />
+            <state relative-caret-position="264">
+              <caret line="186" column="72" lean-forward="true" selection-start-line="186" selection-start-column="72" selection-end-line="186" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -121,6 +119,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -129,8 +128,12 @@
     <findStrings>
       <find>prefecture</find>
       <find>top_topic</find>
-      <find>block conten</find>
       <find>box</find>
+      <find>block conten</find>
+      <find>container</find>
+      <find>container1</find>
+      <find>media</find>
+      <find>gamesinformation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,12 +147,23 @@
         <option value="$PROJECT_DIR$/playerprofile/models.py" />
         <option value="$PROJECT_DIR$/playerprofile/templates/playerprofile/style.css" />
         <option value="$PROJECT_DIR$/playerprofile/static/css/style.css" />
-        <option value="$PROJECT_DIR$/playerprofile/templates/playerprofile/base.html" />
-        <option value="$PROJECT_DIR$/top/templates/top/base.html" />
-        <option value="$PROJECT_DIR$/playerprofile/templates/playerprofile/css.html" />
-        <option value="$PROJECT_DIR$/playerprofile/templates/playerprofile/profile_list.html" />
         <option value="$PROJECT_DIR$/playerprofile/templates/playerprofile/profile_detail.html" />
         <option value="$PROJECT_DIR$/playerprofile/templates/playerprofile/base_detail.html" />
+        <option value="$PROJECT_DIR$/gamesinformation/templates/gamesinformation/games_list.html" />
+        <option value="$PROJECT_DIR$/top/templates/top/base.html" />
+        <option value="$PROJECT_DIR$/Federation/urls.py" />
+        <option value="$PROJECT_DIR$/gamesinformation/admin.py" />
+        <option value="$PROJECT_DIR$/gamesinformation/context_processors.py" />
+        <option value="$PROJECT_DIR$/Federation/settings.py" />
+        <option value="$PROJECT_DIR$/gamesinformation/urls.py" />
+        <option value="$PROJECT_DIR$/gamesinformation/templates/gamesinformation/base.html" />
+        <option value="$PROJECT_DIR$/gamesinformation/views.py" />
+        <option value="$PROJECT_DIR$/gamesinformation/templates/gamesinformation/gamesinformation_detail.html" />
+        <option value="$PROJECT_DIR$/gamesinformation/models.py" />
+        <option value="$PROJECT_DIR$/gamesinformation/templates/gamesinformation/gamesinformation_list.html" />
+        <option value="$PROJECT_DIR$/playerprofile/templates/playerprofile/base.html" />
+        <option value="$PROJECT_DIR$/playerprofile/templates/playerprofile/css.html" />
+        <option value="$PROJECT_DIR$/playerprofile/templates/playerprofile/profile_list.html" />
       </list>
     </option>
   </component>
@@ -188,33 +202,20 @@
             <path>
               <item name="Federation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Federation" type="462c0819:PsiDirectoryNode" />
-              <item name="playerprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Federation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Federation" type="462c0819:PsiDirectoryNode" />
-              <item name="playerprofile" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Federation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Federation" type="462c0819:PsiDirectoryNode" />
-              <item name="playerprofile" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Federation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Federation" type="462c0819:PsiDirectoryNode" />
-              <item name="playerprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Federation" type="b2602c69:ProjectViewProjectNode" />
               <item name="Federation" type="462c0819:PsiDirectoryNode" />
-              <item name="playerprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="playerprofile" type="462c0819:PsiDirectoryNode" />
+              <item name="top" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,22 +323,6 @@
     <entry file="file://$PROJECT_DIR$/playerprofile/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/playerprofile/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="220" column="35" selection-end-line="255" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/playerprofile/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -348,17 +333,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/top/templates/top/base.html">
+    <entry file="file://$PROJECT_DIR$/playerprofile/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamesinformation/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Federation/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" selection-end-line="255" selection-end-column="7" />
+          <caret line="27" column="80" selection-start-line="27" selection-start-column="80" selection-end-line="27" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Federation/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="67" column="61" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamesinformation/context_processors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/playerprofile/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="69" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="69" />
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamesinformation/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -375,17 +403,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/css.html">
+    <entry file="file://$PROJECT_DIR$/gamesinformation/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="164" column="9" selection-start-line="158" selection-start-column="8" selection-end-line="164" selection-end-column="9" />
+        <state relative-caret-position="330">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/profile_list.html">
+    <entry file="file://$PROJECT_DIR$/gamesinformation/templates/gamesinformation/gamesinformation_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        <state relative-caret-position="180">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamesinformation/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamesinformation/templates/gamesinformation/gamesinformation_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gamesinformation/templates/gamesinformation/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2992">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="186" column="72" lean-forward="true" selection-start-line="186" selection-start-column="72" selection-end-line="186" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/base_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="208" column="30" selection-start-line="208" selection-start-column="30" selection-end-line="208" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="256" column="72" lean-forward="true" selection-start-line="256" selection-start-column="72" selection-end-line="256" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -396,13 +472,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/base_detail.html">
+    <entry file="file://$PROJECT_DIR$/playerprofile/templates/playerprofile/profile_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="153" column="46" selection-start-line="153" selection-start-column="46" selection-end-line="153" selection-end-column="46" />
-          <folding>
-            <element signature="e#4684#4690#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top/templates/top/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="186" column="72" lean-forward="true" selection-start-line="186" selection-start-column="72" selection-end-line="186" selection-end-column="72" />
         </state>
       </provider>
     </entry>
