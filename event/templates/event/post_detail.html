@@ -1,0 +1,15 @@
+{% extends 'event/base.html' %}
+
+{% block content %}
+    <div class="card mb-3">
+        <h2 class="card-header bg-dark text-white">{{ post.title }}</h2>
+        <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">{{ post.category.name }}</h6>
+            <p class="card-text">
+                {{ post.text | linebreaksbr | urlize}}
+            </p>
+            <a href="/media/{{ post.guidelines}}" download="{{ post.guidelines }}">要項ダウンロード</a><br>
+            <p>開催日:{{ post.created_at }}</p>
+        </div>
+    </div>
+{% endblock %}

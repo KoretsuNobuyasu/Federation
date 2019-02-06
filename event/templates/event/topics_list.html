@@ -1,0 +1,8 @@
+{% extends 'top/base.html' %}
+
+{% block content %}
+
+{% for topics in topics_list %}
+    <h2>{{topics.title}}</h2>
+{% endfor %}
+{% endblock %}

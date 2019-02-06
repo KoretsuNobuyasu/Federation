@@ -1,0 +1,28 @@
+{% extends 'record/base.html' %}
+{% block content %}
+女子　リンク競技
+    <table class="table">
+        <thead>
+            <tr>
+                <th>種目</th>
+                <th>氏名</th>
+                <th>所属</th>
+                <th>タイム</th>
+                <th>年月日</th>
+                <th>開催地</th>
+            </tr>
+        </thead>
+        {% for recordwoman in recordwoman_list %}
+        <tbody>
+            <tr>
+                <th scope="row">{{ recordwoman.distance }}</th>
+                <td>{{ recordwoman.who }}</td>
+                <td>{{ recordwoman.team }}</td>
+                <td>{{ recordwoman.time }}</td>
+                <td>{{ recordwoman.created_at|date:"Y年 Mj日" }}</td>
+                <td>{{ recordwoman.where }}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+{% endblock %}

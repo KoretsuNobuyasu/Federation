@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'top.apps.TopConfig',
     'playerprofile.apps.PlayerprofileConfig',
     'gamesinformation.apps.GamesinformationConfig',
+    'record.apps.RecordConfig',
+    'event.apps.EventConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
