@@ -1,0 +1,30 @@
+{% extends 'record/css.html' %}
+
+{% block content %}
+
+男子　ロード競技
+<table class="table">
+        <thead>
+            <tr>
+                <th>種目</th>
+                <th>氏名</th>
+                <th>所属</th>
+                <th>タイム</th>
+                <th>年月日</th>
+                <th>開催地</th>
+            </tr>
+        </thead>
+        {% for record in recordroadworldman_list %}
+        <tbody>
+            <tr>
+                <th scope="row">{{ record.distance }}</th>
+                <td>{{ record.who }}</td>
+                <td>{{ record.team }}</td>
+                <td>{{ record.time }}</td>
+                <td>{{ record.created_at|date:"Y年 Mj日" }}</td>
+                <td>{{ record.where }}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+{% endblock %}

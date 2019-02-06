@@ -1,0 +1,23 @@
+{% extends 'playerprofile/css.html' %}
+
+{% block content %}
+
+    <div class="pricing-table">
+        {% for profile in profile_list %}
+        <div class="col">
+            <div class="table">
+                <img class="thumbnail" src="{{ profile.pic }}" alt="Card image cap" width="200px" height="275px">
+                <h2>{{ profile.title }}</h2>
+                <div class="price">
+                    <span><strong>Category</strong> :{{ profile.info.category }}</span>
+                </div>
+                <ul>
+                    <li><strong>所属県連</strong>:{{ profile.info.prefecture }}</li>
+                    <li><strong>チーム名</strong>:{{ profile.team }}</li>
+                </ul>
+                <a href="{% url 'playerprofile:detail' profile.pk %}">詳細</a>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
