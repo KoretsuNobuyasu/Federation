@@ -242,8 +242,7 @@
         </label>
 
         <ul class="menu">
-            <a href="{% url 'top:index' %}">TOP</a>
-            <a href="#">SPEED</a>
+            <a href="{% url 'top:index' %}">SPEED</a>
             <a href="http://jrsf.or.jp/artistic/">ARTISTIC</a>
             <a href="http://jrsf.or.jp/rink_hockey/">RINK HOCKEY</a>
             <a href="http://jrsf.or.jp/inline_hockey/">INLINE HOCKEY</a>
@@ -255,8 +254,8 @@
     <nav class="global-nav">
             <p><a href="{% url 'playerprofile:index' %}">選手紹介</a></p>
             <p><a href="{% url 'gamesinformation:index' %}">大会情報</a></p>
-            <p><a href="#">スクール・体験会</a></p>
-            <p><a href="#">公式記録</a></p>
+            <p><a href="{% url 'event:index' %}">スクール・体験会</a></p>
+            <p><a href="{% url 'record:index' %}">公式記録</a></p>
             <span class="global-nav--bar"></span>
     </nav><br><br><br>
     {% block content %}
